@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         navigator.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("tel:5141234567");
+                Uri uri = Uri.parse("http://perdu.com");
 
-                Intent intent = new Intent(Intent.ACTION_DIAL, uri);
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
 
                 startActivity(intent);
             }
